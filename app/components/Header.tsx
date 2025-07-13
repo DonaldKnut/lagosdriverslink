@@ -19,7 +19,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Detect scroll position
+  // Always call hooks first
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -108,7 +108,7 @@ export default function Header() {
 
       {/* Mobile Navigation Panel */}
       {menuOpen && (
-        <div className="md:hidden bg-black/90 backdrop-blur-md py-6 px-6 space-y-6 shadow-2xl z-50">
+        <div className="md:hidden bg-gradient-to-b from-black to-gray-900/95 backdrop-blur-xl py-6 px-6 space-y-6">
           {navigationLinks.map(({ name, href, icon }) => (
             <Link
               key={href}
