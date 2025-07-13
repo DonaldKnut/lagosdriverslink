@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  font-family: "Montserrat", system-ui, sans-serif;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
