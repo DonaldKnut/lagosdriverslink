@@ -7,8 +7,9 @@ import {
   AlertTriangle,
   User,
   ChevronDown,
-  Badge,
 } from "lucide-react";
+import { Badge } from "@/app/components/ui/badge";
+
 import { useState } from "react";
 import { Card } from "@/app/components/ui/card";
 import { Button } from "@/app/components/ui/button";
