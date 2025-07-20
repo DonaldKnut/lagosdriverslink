@@ -99,7 +99,7 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto bg-black px-4 py-10 text-white">
+    <div className="w-full max-w-md mx-auto px-4 py-10 text-white">
       <div className="mb-6">
         <Link
           href="/"

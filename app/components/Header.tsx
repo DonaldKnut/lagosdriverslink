@@ -9,7 +9,7 @@ import Image from "next/image";
 // Navigation links configuration
 const navigationLinks = [
   { name: "Home", href: "/", icon: <Home size={18} /> },
-  { name: "Drivers", href: "/drivers", icon: <Users size={18} /> },
+  { name: "Drivers", href: "/operators", icon: <Users size={18} /> },
   { name: "Recruit", href: "/recruit", icon: <User size={18} /> },
   { name: "Contact", href: "/contact", icon: <Phone size={18} /> },
 ];

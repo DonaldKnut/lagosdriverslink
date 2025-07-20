@@ -25,3 +25,17 @@ export const HOMEPAGE_QUERY = `
     ctaLink
   }
 `;
+
+export const GET_ALL_DRIVERS = `
+*[_type == "driver"] | order(_createdAt desc) {
+  _id,
+  name,
+  experience,
+  location,
+  bio,
+  category,
+  availability,
+  rating,
+  "photo": photo.asset->url
+}
+`;
