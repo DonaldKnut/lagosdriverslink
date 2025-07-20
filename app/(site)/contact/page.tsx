@@ -11,8 +11,8 @@ const ContactPage = () => {
             Get In Touch
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
-            We'd love to hear from you! Reach out for inquiries, support, or
-            just to say hello.
+            We&apos;d love to hear from you! Reach out for inquiries, support,
+            or just to say hello.
           </p>
 
           <div className="absolute -bottom-20 -right-20 w-64 h-64 rounded-full bg-yellow-500/10 blur-3xl"></div>
@@ -66,7 +66,7 @@ const ContactPage = () => {
               <p className="text-gray-300 mb-5">{item.info}</p>
               <a
                 href={item.link}
-                className="inline-flex items-center text-yellow-500 font-medium group"
+                className="inline-flex items-center text-yellow-500 font-medium group hover:text-yellow-400 transition-colors"
               >
                 {item.action}
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -177,7 +177,7 @@ const ContactPage = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700">
+            <div className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-yellow-500/50 transition-colors">
               <div className="h-64 bg-gray-700 flex items-center justify-center">
                 <MapPin className="w-12 h-12 text-yellow-500" />
               </div>
@@ -188,14 +188,14 @@ const ContactPage = () => {
                 </p>
                 <a
                   href="#"
-                  className="text-yellow-500 font-medium inline-flex items-center"
+                  className="text-yellow-500 font-medium inline-flex items-center hover:text-yellow-400 transition-colors"
                 >
                   Get Directions <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </div>
             </div>
 
-            <div className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700">
+            <div className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-yellow-500/50 transition-colors">
               <div className="h-64 bg-gray-700 flex items-center justify-center">
                 <MapPin className="w-12 h-12 text-yellow-500" />
               </div>
@@ -206,14 +206,14 @@ const ContactPage = () => {
                 </p>
                 <a
                   href="#"
-                  className="text-yellow-500 font-medium inline-flex items-center"
+                  className="text-yellow-500 font-medium inline-flex items-center hover:text-yellow-400 transition-colors"
                 >
                   Get Directions <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </div>
             </div>
 
-            <div className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700">
+            <div className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-yellow-500/50 transition-colors">
               <div className="h-64 bg-gray-700 flex items-center justify-center">
                 <MapPin className="w-12 h-12 text-yellow-500" />
               </div>
@@ -224,7 +224,7 @@ const ContactPage = () => {
                 </p>
                 <a
                   href="#"
-                  className="text-yellow-500 font-medium inline-flex items-center"
+                  className="text-yellow-500 font-medium inline-flex items-center hover:text-yellow-400 transition-colors"
                 >
                   Get Directions <ArrowRight className="ml-2 w-4 h-4" />
                 </a>

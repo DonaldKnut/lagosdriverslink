@@ -56,7 +56,9 @@ export default function HireDriverPage() {
         {submitted ? (
           <div className="bg-yellow-500 text-black text-center p-10 rounded-xl shadow-lg">
             <h2 className="text-2xl font-bold">Request Submitted 🎉</h2>
-            <p className="mt-2">We'll get back to you within a few hours.</p>
+            <p className="mt-2">
+              We&apos;ll get back to you within a few hours.
+            </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">

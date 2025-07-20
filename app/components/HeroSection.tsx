@@ -18,20 +18,20 @@ export default function HeroSection({
     <section className="min-h-[85vh] mt-[88px] flex flex-col-reverse md:flex-row items-center justify-between px-6 sm:px-12 md:px-16 lg:px-24 py-12 gap-8 bg-black transition-all duration-500">
       {/* Left: Text */}
       <div className="max-w-lg text-center md:text-left space-y-5">
-        <h1 className="text-[55px] sm:text-3xl md:text-5xl font-bold italic leading-snug text-yellow-800">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-300">
-            {heroTitle}
-          </span>
-          <br className="hidden md:block" />
-          <span className="italic text-[22px] text-yellow-100">
+        <div className="space-y-2">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-yellow-800">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-300">
+              {heroTitle}
+            </span>
+          </h1>
+          <h2 className="text-xl sm:text-2xl text-yellow-100 italic">
             {heroSubtitle}
-          </span>
-        </h1>
+          </h2>
+        </div>
 
-        <p className="text-base md:text-lg text-white leading-relaxed italic">
-          Vetted professionals for private, corporate, <br /> and logistics
-          needs.
-          <span className="block mt-2 not-italic font-semibold text-yellow-400">
+        <p className="text-base md:text-lg text-white leading-relaxed">
+          Vetted professionals for private, corporate, and logistics needs.
+          <span className="block mt-2 font-semibold text-yellow-400">
             Safety · Reliability · Excellence
           </span>
         </p>
