@@ -94,9 +94,9 @@ export default function HirePlansSection() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-600 to-yellow-400 mx-auto mb-6 rounded-full" />
           <p className="text-yellow-200 max-w-3xl mx-auto text-lg leading-relaxed">
-            From full-time personal drivers to spy-class chauffeurs, we've got a
-            network of trained, background-checked drivers across Lagos. Choose
-            a plan below to get started.
+            From full-time personal drivers to spy-class chauffeurs, we&apos;ve
+            got a network of trained, background-checked drivers across Lagos.
+            Choose a plan below to get started.
           </p>
         </motion.div>
 

@@ -1,7 +1,8 @@
+import { ChangeEvent } from "react";
 import { User, Calendar, DollarSign, Clock } from "lucide-react";
 
 // Define the shape of the data prop
-interface ProjectDetails {
+interface DriverRequirements {
   driverType: string;
   contractDuration: string;
   salaryPackage: string;
@@ -22,26 +23,26 @@ interface SalaryRates {
 }
 
 // Define the props interface for the component
-interface ProjectDetailsFormProps {
-  data: ProjectDetails;
+interface DriverRequirementsFormProps {
+  data: DriverRequirements;
   handleInputChange: (
-    event: React.ChangeEvent<
+    event: ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     >
   ) => void;
   salaryRates: SalaryRates;
 }
 
-export default function ProjectDetailsForm({
+export default function DriverRequirementsForm({
   data,
   handleInputChange,
   salaryRates,
-}: ProjectDetailsFormProps) {
+}: DriverRequirementsFormProps) {
   return (
     <div className="space-y-8">
       <h3 className="text-2xl font-bold text-yellow-400 flex items-center gap-3">
         <User className="w-6 h-6" />
-        Project Details
+        Driver Requirements
       </h3>
       <div className="grid md:grid-cols-2 gap-6">
         <div className="space-y-2">
@@ -102,10 +103,18 @@ export default function ProjectDetailsForm({
             onChange={handleInputChange}
             className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-yellow-600/30 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
           >
-            <option value="weekdays">Monday-Friday</option>
-            <option value="weekdaysSaturday">Monday-Saturday</option>
-            <option value="fullWeek">Monday-Sunday</option>
-            <option value="shift">Daily Service</option>
+            <option value="weekdays">
+              Monday-Friday (₦{salaryRates.weekdays.toLocaleString()})
+            </option>
+            <option value="weekdaysSaturday">
+              Monday-Saturday (₦{salaryRates.weekdaysSaturday.toLocaleString()})
+            </option>
+            <option value="fullWeek">
+              Monday-Sunday (₦{salaryRates.fullWeek.toLocaleString()})
+            </option>
+            <option value="shift">
+              Daily Service (₦{salaryRates.shift.toLocaleString()})
+            </option>
           </select>
         </div>
         <div className="space-y-2">
@@ -126,7 +135,7 @@ export default function ProjectDetailsForm({
         <div className="space-y-2">
           <label className="block text-yellow-300 font-medium flex items-center gap-2">
             <Calendar className="w-4 h-4" />
-            Project Start Date
+            Resumption Date
           </label>
           <input
             name="resumptionDate"
@@ -134,7 +143,7 @@ export default function ProjectDetailsForm({
             value={data.resumptionDate}
             onChange={handleInputChange}
             className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-yellow-600/30 text-white placeholder:text-yellow-200/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
-            placeholder="Select project start date"
+            placeholder="Select resumption date"
           />
         </div>
         <div className="space-y-2">
@@ -168,7 +177,7 @@ export default function ProjectDetailsForm({
       </div>
       <div className="space-y-2">
         <label className="block text-yellow-300 font-medium">
-          Project Description
+          Duties Description
         </label>
         <textarea
           name="dutiesDescription"
@@ -176,7 +185,7 @@ export default function ProjectDetailsForm({
           onChange={handleInputChange}
           rows={4}
           className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-yellow-600/30 text-white placeholder:text-yellow-200/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
-          placeholder="Describe the project requirements, special conditions, and any other relevant details..."
+          placeholder="Describe the driver's duties, special conditions, and any other relevant details..."
         />
       </div>
     </div>

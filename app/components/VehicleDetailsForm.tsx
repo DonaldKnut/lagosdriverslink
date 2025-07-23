@@ -40,7 +40,7 @@ export default function VehicleDetailsForm({
           onChange={handleInputChange}
           className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-yellow-600/30 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
         >
-          <option value="yes">Yes, we'll provide vehicle</option>
+          <option value="yes">Yes, we&apos;ll provide vehicle</option>
           <option value="no">No, driver should use their own</option>
           <option value="negotiable">To be discussed</option>
         </select>
@@ -74,7 +74,7 @@ export default function VehicleDetailsForm({
               onChange={handleInputChange}
               className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-yellow-600/30 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
             >
-              <option value="svg">Automatic</option>
+              <option value="automatic">Automatic</option>
               <option value="manual">Manual</option>
               <option value="both">Both</option>
             </select>
@@ -130,7 +130,7 @@ export default function VehicleDetailsForm({
               type="text"
               value={data.vehicleYear}
               onChange={handleInputChange}
-              className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-yellow-600/30 text-white placeholder:text-yellow-200/50 focus:outline-none focus:ring-2Stuart-5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-yellow-600/30 text-white placeholder:text-yellow-200/50 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all"
               placeholder="e.g. 2020"
             />
           </div>
