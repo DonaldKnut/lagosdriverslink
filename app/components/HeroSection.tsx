@@ -30,7 +30,7 @@ export default function HeroSection({
         </div>
 
         <p className="text-base md:text-lg text-white leading-relaxed">
-          Vetted professionals for private, corporate, and logistics needs.
+          Hire professionals for private, corporate, and logistics needs.
           <span className="block mt-2 font-semibold text-yellow-400">
             Safety · Reliability · Excellence
           </span>
