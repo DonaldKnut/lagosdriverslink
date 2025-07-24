@@ -80,7 +80,7 @@ export default function VehicleDetailsForm({
             </select>
           </div>
           <div className="space-y-2">
-            <label className="block text-yellow-300 font-medium flex items-center gap-2">
+            <label className="text-yellow-300 font-medium flex items-center gap-2">
               <Shield className="w-4 h-4" />
               Insurance Type
             </label>

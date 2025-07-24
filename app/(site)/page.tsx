@@ -5,6 +5,7 @@ import Testimonials from "../components/Testimonials";
 import { sanityClient } from "@/lib/sanity";
 import { HOMEPAGE_QUERY } from "@/lib/queries";
 import HirePlansSection from "../components/HirePlansSection";
+import WhatsAppFloatingButton from "../components/WhatsAppFloatingButton";
 
 export const metadata = {
   title: "Hire Verified Lagos Drivers | Lagos Drivers Link",
@@ -63,6 +64,7 @@ export default async function HomePage() {
       <HirePlansSection />
       <Testimonials />
       <FAQ />
+      <WhatsAppFloatingButton />
     </div>
   );
 }

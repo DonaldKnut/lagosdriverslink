@@ -41,7 +41,7 @@ export default function PersonalDetailsForm({
           />
         </div>
         <div className="space-y-2">
-          <label className="block text-yellow-300 font-medium flex items-center gap-2">
+          <label className="text-yellow-300 font-medium flex items-center gap-2">
             <Mail className="w-4 h-4" />
             Email Address
           </label>
@@ -56,7 +56,7 @@ export default function PersonalDetailsForm({
           />
         </div>
         <div className="space-y-2">
-          <label className="block text-yellow-300 font-medium flex items-center gap-2">
+          <label className="text-yellow-300 font-medium flex items-center gap-2">
             <Phone className="w-4 h-4" />
             Phone Number
           </label>

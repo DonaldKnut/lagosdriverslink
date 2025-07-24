@@ -63,7 +63,7 @@ export default function DriverRequirementsForm({
           </select>
         </div>
         <div className="space-y-2">
-          <label className="block text-yellow-300 font-medium flex items-center gap-2">
+          <label className="text-yellow-300 font-medium flex items-center gap-2">
             <Calendar className="w-4 h-4" />
             Contract Duration
           </label>
@@ -81,9 +81,9 @@ export default function DriverRequirementsForm({
           </select>
         </div>
         <div className="space-y-2">
-          <label className="block text-yellow-300 font-medium flex items-center gap-2">
+          <label className="text-yellow-300 font-medium flex items-center gap-2">
             <DollarSign className="w-4 h-4" />
-            Salary Package (Monthly)
+            Salary Package (Minimum - Monthly)
           </label>
           <input
             name="salaryPackage"
@@ -133,7 +133,7 @@ export default function DriverRequirementsForm({
           </select>
         </div>
         <div className="space-y-2">
-          <label className="block text-yellow-300 font-medium flex items-center gap-2">
+          <label className="text-yellow-300 font-medium flex items-center gap-2">
             <Calendar className="w-4 h-4" />
             Resumption Date
           </label>
@@ -147,7 +147,7 @@ export default function DriverRequirementsForm({
           />
         </div>
         <div className="space-y-2">
-          <label className="block text-yellow-300 font-medium flex items-center gap-2">
+          <label className="text-yellow-300 font-medium flex items-center gap-2">
             <Clock className="w-4 h-4" />
             Daily Start Time
           </label>
@@ -161,7 +161,7 @@ export default function DriverRequirementsForm({
           />
         </div>
         <div className="space-y-2">
-          <label className="block text-yellow-300 font-medium flex items-center gap-2">
+          <label className="text-yellow-300 font-medium flex items-center gap-2">
             <Clock className="w-4 h-4" />
             Daily End Time
           </label>

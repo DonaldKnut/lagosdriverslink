@@ -8,10 +8,11 @@ import {
   Youtube,
   Globe,
   HelpCircle,
-  MessageSquare,
   Shield,
   FileText,
   Heart,
+  Phone,
+  Mail,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -163,10 +164,18 @@ export default function PremiumFooter() {
               <HelpCircle className="h-4 w-4 mr-1 text-yellow-500" /> Help
             </Link>
             <Link
-              href="#"
+              href="mailto:samsonenoch@lagosdriverslink.com"
               className="flex items-center text-gray-300 hover:text-yellow-500 text-sm"
             >
-              <MessageSquare className="h-4 w-4 mr-1 text-yellow-500" /> Contact
+              <Mail className="h-4 w-4 mr-1 text-yellow-500" />{" "}
+              teams@lagosdriverslink.com
+            </Link>
+            <Link
+              href="tel:+2349032702233"
+              className="flex items-center text-gray-300 hover:text-yellow-500 text-sm"
+            >
+              <Phone className="h-4 w-4 mr-1 text-yellow-500" /> +234 903 270
+              2233
             </Link>
             <Link
               href="#"

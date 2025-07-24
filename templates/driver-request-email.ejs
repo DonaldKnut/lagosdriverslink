@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Driver Request Submitted</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0a0a0a;
+        font-family: "Segoe UI", sans-serif;
+        color: #facc15;
+      }
+      .container {
+        padding: 40px;
+        background-color: #1c1c1c;
+        max-width: 600px;
+        margin: auto;
+        border-radius: 8px;
+        border: 2px solid #facc15;
+      }
+      h1 {
+        color: #fcd34d;
+        margin-bottom: 20px;
+      }
+      p {
+        line-height: 1.6;
+        color: #fde68a;
+      }
+      .footer {
+        margin-top: 40px;
+        text-align: center;
+        color: #d4af37;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚗 New Driver Request Received</h1>
+      <p><strong>Full Name:</strong> <%= fullName %></p>
+      <p><strong>Email:</strong> <%= email %></p>
+      <p><strong>Phone:</strong> <%= phone %></p>
+      <p><strong>Preferred Location:</strong> <%= location %></p>
+
+      <p><strong>Request Summary:</strong></p>
+      <pre style="color: #fef08a; white-space: pre-wrap">
+<%= requestDetails %></pre
+      >
+
+      <div class="footer">
+        LagosDriversLINK • We'll reach out within 24 hours.
+      </div>
+    </div>
+  </body>
+</html>
