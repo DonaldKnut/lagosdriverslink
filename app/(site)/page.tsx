@@ -28,7 +28,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/og-banner.png",
+        url: "/ldl_logo.png",
         width: 1200,
         height: 630,
         alt: "Lagos Drivers Link",
