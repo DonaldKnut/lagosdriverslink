@@ -9,23 +9,20 @@ import HirePlansSection from "../components/HirePlansSection";
 import WhatsAppFloatingButton from "../components/WhatsAppFloatingButton";
 import { HomepageData } from "@/types/homepage";
 
-// Base URL for fallback image
-
-// Base URL for fallback image
+// Fallback image
 const BASE_URL = process.env.NEXTAUTH_URL || "https://lagosdriverslink.com";
 
 // ISR: Revalidate every 60 seconds
 export const revalidate = 60;
 
 export default async function HomePage() {
-  let data: HomepageData | null = null;
-  try {
-    data = await sanityClient.fetch(HOMEPAGE_QUERY);
-  } catch (error) {
-    console.error("Error fetching homepage data:", error);
-  }
+  const data: HomepageData | null = await sanityClient
+    .fetch(HOMEPAGE_QUERY)
+    .catch((error) => {
+      console.error("Sanity fetch failed:", error);
+      return null;
+    });
 
-  // Fallback if no data is available
   if (!data) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
@@ -33,13 +30,13 @@ export default async function HomePage() {
           Oops, something went wrong
         </h1>
         <p className="mt-2 text-lg">
-          Please try again later or contact support.
+          Unable to load content. Please try again later.
         </p>
         <a
-          href="https://wa.me/1234567890"
+          href="https://wa.me/+234 903 270 2233"
           className="mt-4 px-6 py-3 bg-yellow-400 text-black rounded-lg"
         >
-          Contact Us
+          Contact Support
         </a>
       </div>
     );
