@@ -10,30 +10,21 @@ import WhatsAppFloatingButton from "../components/WhatsAppFloatingButton";
 import { HomepageData } from "@/types/homepage";
 
 // Base URL for fallback image
+
+// Base URL for fallback image
 const BASE_URL = process.env.NEXTAUTH_URL || "https://lagosdriverslink.com";
 
-export async function getStaticProps() {
-  try {
-    const data: HomepageData = await sanityClient.fetch(HOMEPAGE_QUERY);
+// ISR: Revalidate every 60 seconds
+export const revalidate = 60;
 
-    return {
-      props: { data: data || null },
-      revalidate: 60, // ISR: Revalidate every 60 seconds
-    };
+export default async function HomePage() {
+  let data: HomepageData | null = null;
+  try {
+    data = await sanityClient.fetch(HOMEPAGE_QUERY);
   } catch (error) {
     console.error("Error fetching homepage data:", error);
-    return {
-      props: { data: null },
-      revalidate: 60,
-    };
   }
-}
 
-interface HomePageProps {
-  data: HomepageData | null;
-}
-
-export default function HomePage({ data }: HomePageProps) {
   // Fallback if no data is available
   if (!data) {
     return (
