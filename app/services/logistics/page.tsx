@@ -1,11 +1,5 @@
-import {
-  Truck,
-  Package,
-  Warehouse,
-  Globe,
-  Clock,
-  ArrowRight,
-} from "lucide-react";
+import { Truck, Package, Warehouse, Globe, Clock } from "lucide-react";
+import Image from "next/image";
 
 const LogisticsPage = () => {
   return (
@@ -117,11 +111,13 @@ const LogisticsPage = () => {
             </ul>
           </div>
           <div className="bg-gray-800 rounded-xl p-2 border border-gray-700">
-            <div className="bg-gray-900 rounded-lg overflow-hidden aspect-video flex items-center justify-center">
-              <img
+            <div className="bg-gray-900 rounded-lg overflow-hidden aspect-video relative">
+              <Image
                 src="/logistics-dashboard.jpg"
                 alt="Logistics Dashboard"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                priority
               />
             </div>
           </div>

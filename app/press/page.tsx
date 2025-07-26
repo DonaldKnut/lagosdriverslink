@@ -1,4 +1,4 @@
-import { Newspaper, Mic, Tv, Award, Download, ArrowRight } from "lucide-react";
+import { Newspaper, Mic, Tv, Download, ArrowRight, Globe } from "lucide-react";
 
 const PressPage = () => {
   const pressReleases = [

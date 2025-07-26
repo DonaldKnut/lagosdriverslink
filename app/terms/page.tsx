@@ -7,7 +7,7 @@ const TermsPage = () => {
       <section className="relative py-28 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-black to-gray-900 overflow-hidden">
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">
-            Terms & Policies
+            Terms &amp; Policies
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
             Legal information governing your use of DrivePro services.
@@ -88,9 +88,9 @@ const TermsPage = () => {
             </h3>
             <p className="text-gray-300 mb-6">
               By accessing or using any services provided by DrivePro
-              ("Services"), you agree to be bound by these Terms of Service
-              ("Terms"). If you do not agree to these Terms, you may not use our
-              Services.
+              (&quot;Services&quot;), you agree to be bound by these Terms of
+              Service (&quot;Terms&quot;). If you do not agree to these Terms,
+              you may not use our Services.
             </p>
 
             <h3 className="text-xl font-bold mt-8 mb-4 text-yellow-300">
@@ -162,7 +162,7 @@ const TermsPage = () => {
             <p className="text-gray-300 mb-6">
               DrivePro reserves the right to modify these Terms at any time. We
               will provide notice of any changes by posting the updated Terms on
-              our website and updating the "Last updated" date.
+              our website and updating the &quot;Last updated&quot; date.
             </p>
 
             <h3 className="text-xl font-bold mt-8 mb-4 text-yellow-300">

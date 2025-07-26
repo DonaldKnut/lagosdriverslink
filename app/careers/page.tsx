@@ -1,11 +1,5 @@
-import {
-  Briefcase,
-  DollarSign,
-  MapPin,
-  Clock,
-  Award,
-  ArrowRight,
-} from "lucide-react";
+import { Briefcase, DollarSign, Award, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const CareersPage = () => {
   const openPositions = [
@@ -172,8 +166,8 @@ const CareersPage = () => {
               <p className="text-gray-300 mb-6">
                 At DrivePro, we foster an environment of innovation,
                 collaboration, and excellence. Our team is our greatest asset,
-                and we're committed to creating a workplace where everyone can
-                thrive.
+                and we&apos;re committed to creating a workplace where everyone
+                can thrive.
               </p>
               <div className="space-y-4">
                 {[
@@ -194,32 +188,36 @@ const CareersPage = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-gray-800 rounded-lg overflow-hidden aspect-square">
-                <img
+              <div className="bg-gray-800 rounded-lg overflow-hidden aspect-square relative">
+                <Image
                   src="/culture-1.jpg"
                   alt="Team Culture"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
-              <div className="bg-gray-800 rounded-lg overflow-hidden aspect-square">
-                <img
+              <div className="bg-gray-800 rounded-lg overflow-hidden aspect-square relative">
+                <Image
                   src="/culture-2.jpg"
                   alt="Team Culture"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
-              <div className="bg-gray-800 rounded-lg overflow-hidden aspect-square">
-                <img
+              <div className="bg-gray-800 rounded-lg overflow-hidden aspect-square relative">
+                <Image
                   src="/culture-3.jpg"
                   alt="Team Culture"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
-              <div className="bg-gray-800 rounded-lg overflow-hidden aspect-square">
-                <img
+              <div className="bg-gray-800 rounded-lg overflow-hidden aspect-square relative">
+                <Image
                   src="/culture-4.jpg"
                   alt="Team Culture"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
             </div>

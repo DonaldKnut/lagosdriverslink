@@ -1,11 +1,5 @@
-import {
-  Shield,
-  AlertTriangle,
-  Ambulance,
-  Car,
-  Camera,
-  ArrowRight,
-} from "lucide-react";
+import { Shield, AlertTriangle, Ambulance, Car, Camera } from "lucide-react";
+import Image from "next/image";
 
 const SafetyPage = () => {
   return (
@@ -34,8 +28,8 @@ const SafetyPage = () => {
             </h2>
             <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              At DrivePro, safety isn't just a priority—it's the foundation of
-              everything we do.
+              At DrivePro, safety isn&apos;t just a priority—it&apos;s the
+              foundation of everything we do.
             </p>
           </div>
 
@@ -109,11 +103,12 @@ const SafetyPage = () => {
               </ul>
             </div>
             <div className="bg-gray-800 rounded-xl p-2 border border-gray-700">
-              <div className="bg-gray-900 rounded-lg overflow-hidden aspect-video flex items-center justify-center">
-                <img
+              <div className="bg-gray-900 rounded-lg overflow-hidden aspect-video relative">
+                <Image
                   src="/safety-features.jpg"
                   alt="Safety Features"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -179,7 +174,7 @@ const SafetyPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">
-              Certifications & Compliance
+              Certifications &amp; Compliance
             </h2>
             <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
           </div>
@@ -195,11 +190,14 @@ const SafetyPage = () => {
                 key={index}
                 className="bg-gray-800 p-6 rounded-lg border border-gray-700"
               >
-                <img
-                  src={cert}
-                  alt="Certification"
-                  className="h-20 w-auto object-contain"
-                />
+                <div className="relative h-20 w-full">
+                  <Image
+                    src={cert}
+                    alt="Certification"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
             ))}
           </div>

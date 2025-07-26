@@ -1,4 +1,5 @@
 import { Users, Globe, Award, BarChart2 } from "lucide-react";
+import Image from "next/image";
 
 const AboutPage = () => {
   return (
@@ -7,7 +8,7 @@ const AboutPage = () => {
       <section className="relative py-28 px-6 md:px-12 lg:px-24 bg-gradient-to-b from-black to-gray-900 overflow-hidden">
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600">
-            About DrivePro
+            About Lagos Drivers Link
           </h1>
           <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
             Pioneering excellence in corporate transportation and logistics
@@ -23,7 +24,7 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-yellow-400">
-              Our Mission & Vision
+              Our Mission &amp; Vision
             </h2>
             <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
           </div>
@@ -42,17 +43,20 @@ const AboutPage = () => {
                 Vision
               </h3>
               <p className="text-gray-300">
-                To become Africa's most trusted corporate mobility partner,
+                To become Africa&apos;s most trusted corporate mobility partner,
                 setting industry benchmarks for reliability and customer
                 satisfaction.
               </p>
             </div>
             <div className="bg-gray-800 rounded-xl p-8 border border-gray-700">
-              <img
-                src="/about-mission.jpg"
-                alt="Our Team"
-                className="rounded-lg w-full h-auto object-cover"
-              />
+              <div className="relative w-full aspect-video">
+                <Image
+                  src="/about-mission.jpg"
+                  alt="Our Team"
+                  fill
+                  className="rounded-lg object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -108,7 +112,7 @@ const AboutPage = () => {
             </h2>
             <div className="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Meet the visionary leaders driving DrivePro's success story.
+              Meet the visionary leaders driving DrivePro&apos;s success story.
             </p>
           </div>
 
@@ -126,11 +130,12 @@ const AboutPage = () => {
                 key={index}
                 className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-yellow-500/50 transition-colors"
               >
-                <div className="h-64 bg-gray-700 overflow-hidden">
-                  <img
+                <div className="h-64 bg-gray-700 overflow-hidden relative">
+                  <Image
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div className="p-6">

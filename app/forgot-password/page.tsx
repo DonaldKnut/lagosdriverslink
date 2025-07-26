@@ -1,4 +1,4 @@
-import { Lock, Mail, ArrowRight } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const ForgotPasswordPage = () => {
